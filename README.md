@@ -40,6 +40,7 @@ quantum/
 │   ├── style.css
 │   └── app.js
 └── requirements.txt
+
 The pipeline looks like this:
 Traffic prediction → QUBO formulation → Solver → 2-opt cleanup → Route
 Each stage feeds into the next. The traffic model informs the cost matrix, which shapes the QUBO, which the solver optimizes, which gets polished by local search.
